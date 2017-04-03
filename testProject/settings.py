@@ -25,7 +25,7 @@ SECRET_KEY = 'fy8+q_6ou+(b^^y24zzpy5q+x26wyjqxry!4t=mw%my!l40*f0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost','127.0.0.1','[::1]']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'Sitio',
 ]
 
 MIDDLEWARE = [
