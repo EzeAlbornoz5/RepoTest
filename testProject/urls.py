@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from Sitio.views import inicio
+from Sitio.views import inicio, CrearNoticia, LoginFake
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^inicio/$',inicio),
+    url(r'^inicio/$', inicio),
+    url(r'^login_fake/$', LoginFake),
+    url(r'^crear_noticia/$', CrearNoticia),
 ]
